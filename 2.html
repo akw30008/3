@@ -1,0 +1,31 @@
+<html>
+<body>
+<script>
+var ladder =
+{
+	step: 13,
+	up: function()
+	{
+		this.step++;
+		return this;
+	},
+	down: function()
+	{
+		this.step--;
+		return this;
+	},
+	showStep: function()
+	{
+		alert( this.step );
+		return this;
+	},
+	down2step: function()
+	{
+		this.step = this.step-2;
+		return this;
+	},
+}
+ladder.up().up().down().up().down().up().down().up().showStep().down2step().up().down().up().up().up().down().up().showStep();
+</script>
+</body>
+</html>

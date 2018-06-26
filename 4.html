@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+function Calculator()
+{
+	this.read = function()
+	{
+		this.Val1 = +prompt('Введите 1-е число', '');
+		this.Val2 = +prompt('Введите 2-е число', '');
+	};
+	this.sum = function()
+	{
+		return this.Val1 + this.Val2;
+	};
+	this.div = function()
+	{
+		return this.Val1 / this.Val2;
+	};
+}
+var calculator = new Calculator();
+calculator.read();
+alert("Сумма введенных чисел: " + calculator.sum());
+alert("Частное введенных чисел: " + calculator.div());
+</script>
+</body>
+</html>

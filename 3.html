@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+function sumFigures(a)
+{
+	var nNum = a;
+	function f(b)
+	{
+		nNum += b;
+		return f;
+	}
+	f.toString = function()
+	{
+		return nNum;
+	};
+	return f;
+}
+alert( sumFigures(7)(1) );
+alert( sumFigures(3)(-6)(8) );
+alert( sumFigures(6)(-4)(-7)(9) );
+alert( sumFigures(0)(1)(3)(7)(-9)(-5) );
+</script>
+</body>
+</html>
